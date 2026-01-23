@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: EventClean
+    restart: always
+
+    environment:
+      POSTGRES_DB: EventClean
+      POSTGRES_USER: anthony
+      POSTGRES_PASSWORD: 1234
+
+    ports:
+      - "5431:5432"
